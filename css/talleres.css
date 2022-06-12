@@ -1,0 +1,23 @@
+.containerTaller h2 {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+}
+
+.containerTaller p {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+}
+
+.imagenes-talleres{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5px;
+}
+
+.imagenes-talleres img{
+        border-radius: 10px;
+        width: 45%;
+        margin: auto;
+}
