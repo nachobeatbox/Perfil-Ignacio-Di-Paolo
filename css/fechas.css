@@ -1,0 +1,13 @@
+.fechas{
+    max-width: 80%;
+    margin: auto;
+}
+.fechas h3{
+    color: white;
+}
+.fechas ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
