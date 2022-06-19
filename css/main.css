@@ -12,18 +12,6 @@ body {
     box-shadow: 0 0 400px 0 rgb(39, 39, 39);
 }
 
-.imgFuera{
-    position: absolute;
-    max-width: 15% ;
-    transform: translate(-120% , 60%);
-}
-.imgFuera2{
-    position: absolute;
-    right: 0;
-    max-width: 15% ;
-    transform: translate(-20%, 80%);
-}
-
 /* --------HEADER---------- */
 
 .tittle {
