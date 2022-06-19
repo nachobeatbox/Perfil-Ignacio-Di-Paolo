@@ -147,6 +147,7 @@ nav ul li a:hover {
 }
 .photos img:hover {
     transform: scale(1.025);
+    box-shadow: 0 0 5px 0 white;
 }
 
 /* ------FOOTER-------- */
