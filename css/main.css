@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #0a0a0a;
+  width: 60%;
+  margin: 15px 20%;
+  box-shadow: 0 0 400px 0 #272727; }
+
+/* --------HEADER---------- */
+.position-relative {
+  background-color: #0f0f0f; }
+
+.img-fluid {
+  max-height: 300px; }
+
+section .d-flex {
+  max-width: 150px;
+  max-height: 25px;
+  bottom: 5%;
+  right: 0; }
+
+.bg-propio {
+  background-color: #414141; }
+
+.nav-item :hover {
+  color: gray !important; }
+
+nav ul li a:hover {
+  background-color: #cdcdcd;
+  color: gray; }
+
+/* -----MEDIA QUERY----- */
+@media screen and (max-width: 1100px) {
+  section .d-flex {
+    max-height: 25px;
+    max-width: 150px; }
+  body {
+    width: 70%;
+    margin: 30px auto; }
+  .container-main section p {
+    font-size: 20px; }
+    .container-main section p h1 {
+      font-size: 30px; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    width: 80%;
+    margin: 30px auto; }
+  section .d-flex {
+    max-height: 20px;
+    max-width: 125px; }
+  .container-main h1 {
+    font-size: 25px; }
+  .container-main section p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 500px) {
+  section .d-flex {
+    display: none !important;
+    max-height: 20px;
+    max-width: 100px; }
+  body {
+    width: 100%;
+    margin-top: 0; } }
+
+/* ------MAIN------- */
+.container-main {
+  background-color: #232323;
+  min-height: 200px; }
+  .container-main h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    font-size: 30px; }
+  .container-main section p {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 20px; }
+  .container-main .photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition: 0.3s;
+    overflow: hidden; }
+    .container-main .photos img {
+      max-width: 40%;
+      height: auto;
+      margin: 10px;
+      margin-bottom: 50px;
+      transition: 0.3s;
+      border-radius: 10px; }
+  .container-main .photos img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 5px 0 white; }
