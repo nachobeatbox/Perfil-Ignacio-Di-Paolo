@@ -1,0 +1,20 @@
+.fechas {
+  max-width: 80%;
+  margin: auto;
+}
+
+.fechas h3 {
+  color: white;
+}
+
+.fechas-pasadas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: start;
+  padding-bottom: 10px;
+  margin-bottom: 0rem;
+}
+
+/*# sourceMappingURL=fechas.css.map */

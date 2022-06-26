@@ -1,0 +1,36 @@
+.obras {
+  max-width: 90%;
+  margin: auto;
+}
+
+.obras h3 {
+  color: white;
+  text-align: center;
+}
+
+.obras p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.obras img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+}
+
+.obras iframe {
+  align-self: center;
+  margin-top: 15px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=shows.css.map */

@@ -1,0 +1,33 @@
+/* --------HEADER---------- */
+
+.position-relative{
+    background-color: rgb(15, 15, 15);
+}
+
+.img-fluid{
+    max-height: 300px;
+}
+
+section .d-flex{
+    max-width: 150px;
+    max-height: 25px;
+    bottom: 5%;
+    right: 0;
+}
+
+.bg-propio{
+    background-color: rgb(65, 65, 65);
+}
+
+.nav-item :hover{
+    color: gray !important;
+}
+
+nav ul li a:hover {
+    background-color: rgb(205, 205, 205);
+    color: gray;
+}
+
+.carousel-item{
+    max-height: 600px !important;
+}

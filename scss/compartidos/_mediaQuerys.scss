@@ -1,0 +1,63 @@
+/* -----MEDIA QUERY----- */
+
+@media screen and (max-width: 1100px) {
+
+    body {
+        width: 80%;
+        margin: 30px auto
+    }
+
+    .container-main {
+        section {
+            p {
+                font-size: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+
+        #cards .card{
+            margin: 10px;
+            width: 20rem ;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        width: 80%;
+    }
+
+    .container-main {
+        h1 {
+            font-size: 25px;
+        }
+
+        section p {
+            font-size: 15px;
+        }
+
+        #cards .card{
+            margin: 10px;
+            width: 25rem ;
+        }
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    body {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #cards .card{
+        margin: 10px;
+        width: 12rem !important ;
+    }
+}
