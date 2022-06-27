@@ -4,23 +4,23 @@
 
     body {
         width: 80%;
-        margin: 30px auto
-    }
+        margin: 30px auto;
 
-    .container-main {
-        section {
-            p {
-                font-size: 20px;
+        .container-main {
+            section {
+                p {
+                    font-size: 20px;
+                }
+
+                h1 {
+                    font-size: 30px;
+                }
             }
 
-            h1 {
-                font-size: 30px;
+            #cards .card {
+                margin: 10px;
+                width: 45%;
             }
-        }
-
-        #cards .card{
-            margin: 10px;
-            width: 20rem ;
         }
     }
 
@@ -30,20 +30,31 @@
 
     body {
         width: 80%;
-    }
 
-    .container-main {
-        h1 {
-            font-size: 25px;
-        }
+        .container-main {
+            h1 {
+                font-size: 25px;
+            }
 
-        section p {
-            font-size: 15px;
-        }
+            section p {
+                font-size: 15px;
+            }
 
-        #cards .card{
-            margin: 10px;
-            width: 25rem ;
+            #cards {
+                min-width: 90%;
+
+                .card {
+                    margin: 10px;
+                    width: 45% !important;
+                }
+            }
+
+            #cards-taller {
+                .card {
+                    margin: 10px;
+                    width: 44%;
+                }
+            }
         }
     }
 
@@ -54,10 +65,21 @@
     body {
         width: 100%;
         margin-top: 0;
+
+        #img-logo {
+            min-height: 200px;
+        }
+
+        #cards {
+            width: 90%;
+        }
+
+        #cards-taller {
+            .card {
+                margin: 10px;
+                width: 70% !important;
+            }
+        }
     }
 
-    #cards .card{
-        margin: 10px;
-        width: 12rem !important ;
-    }
 }

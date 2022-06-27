@@ -1,11 +1,10 @@
 /* --------HEADER---------- */
-
 .position-relative{
     background-color: rgb(15, 15, 15);
 }
 
-.img-fluid{
-    max-height: 300px;
+#img-logo{
+    max-height: 500px;
 }
 
 section .d-flex{
@@ -20,7 +19,7 @@ section .d-flex{
 }
 
 .nav-item :hover{
-    color: gray !important;
+    color: gray ;
 }
 
 nav ul li a:hover {
@@ -29,5 +28,5 @@ nav ul li a:hover {
 }
 
 .carousel-item{
-    max-height: 600px !important;
+    max-height: 600px;
 }

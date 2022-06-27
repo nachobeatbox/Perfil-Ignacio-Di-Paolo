@@ -1,27 +1,29 @@
-.containerTaller h2 {
+.container-main .title-taller h2 {
   color: white;
   font-size: 20px;
   text-align: center;
 }
-
-.containerTaller p {
+.container-main .title-taller p {
   color: white;
-  max-width: 80%;
+  max-width: 60%;
   margin: 20px auto;
   font-size: 20px;
   text-align: center;
 }
-
-.imagenes-talleres {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 5px;
-}
-
-.imagenes-talleres img {
-  border-radius: 10px;
-  width: 45%;
+.container-main #cards-taller {
+  max-width: 90%;
   margin: auto;
+}
+.container-main #cards-taller .card {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgb(108, 108, 108);
+  min-width: 50%;
+  color: white;
+  margin: 10px;
+  transition: 0.3s;
+}
+.container-main #cards-taller .card:hover {
+  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
 }
 
 /*# sourceMappingURL=talleres.css.map */

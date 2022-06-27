@@ -15,8 +15,8 @@ body {
   background-color: rgb(15, 15, 15);
 }
 
-.img-fluid {
-  max-height: 300px;
+#img-logo {
+  max-height: 500px;
 }
 
 section .d-flex {
@@ -31,7 +31,7 @@ section .d-flex {
 }
 
 .nav-item :hover {
-  color: gray !important;
+  color: gray;
 }
 
 nav ul li a:hover {
@@ -40,7 +40,7 @@ nav ul li a:hover {
 }
 
 .carousel-item {
-  max-height: 600px !important;
+  max-height: 600px;
 }
 
 /* ------MAIN------- */
@@ -50,31 +50,34 @@ nav ul li a:hover {
   border-top: 5px solid #151515;
 }
 .container-main h1 {
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-  text-align: center;
-  margin: 0;
+  color: rgb(195, 195, 195);
+  text-align: left;
+  text-decoration: underline 1px;
+  margin-left: 15%;
   padding: 20px;
-  font-size: 30px;
+  font-size: 35px;
 }
 .container-main section p {
   width: 70%;
   margin-left: 15%;
   margin-bottom: 50px;
-  text-align: center;
+  text-align: left;
   color: white;
   font-size: 20px;
 }
 .container-main #cards {
   padding-bottom: 60px;
+  max-width: 70%;
+  margin: auto;
 }
 .container-main #cards .card {
   background-color: rgb(35, 35, 35);
   border: 1px solid white;
-  width: 18rem;
+  width: 30%;
+  transition: 0.3s;
 }
 .container-main #cards .card:hover {
-  box-shadow: 0 5px 5px 1px rgb(184, 184, 184);
+  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
 }
 
 /* -----MEDIA QUERY----- */
@@ -83,30 +86,37 @@ nav ul li a:hover {
     width: 80%;
     margin: 30px auto;
   }
-  .container-main section p {
+  body .container-main section p {
     font-size: 20px;
   }
-  .container-main section h1 {
+  body .container-main section h1 {
     font-size: 30px;
   }
-  .container-main #cards .card {
+  body .container-main #cards .card {
     margin: 10px;
-    width: 20rem;
+    width: 45%;
   }
 }
 @media screen and (max-width: 768px) {
   body {
     width: 80%;
   }
-  .container-main h1 {
+  body .container-main h1 {
     font-size: 25px;
   }
-  .container-main section p {
+  body .container-main section p {
     font-size: 15px;
   }
-  .container-main #cards .card {
+  body .container-main #cards {
+    min-width: 90%;
+  }
+  body .container-main #cards .card {
     margin: 10px;
-    width: 25rem;
+    width: 45% !important;
+  }
+  body .container-main #cards-taller .card {
+    margin: 10px;
+    width: 44%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -114,9 +124,15 @@ nav ul li a:hover {
     width: 100%;
     margin-top: 0;
   }
-  #cards .card {
+  body #img-logo {
+    min-height: 200px;
+  }
+  body #cards {
+    width: 90%;
+  }
+  body #cards-taller .card {
     margin: 10px;
-    width: 12rem !important;
+    width: 70% !important;
   }
 }
 
