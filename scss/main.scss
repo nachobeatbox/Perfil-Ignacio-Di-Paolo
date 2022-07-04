@@ -1,5 +1,12 @@
-@import "compartidos/_general";
-@import "compartidos/_header.scss";
-@import "compartidos/_container-Index";
-@import "compartidos/_mediaQuerys.scss";
+@import "partials/variables";
+@import "partials/_general";
+@import "partials/_header.scss";
+@import "partials/_container-Index";
+@import "scss-pages/compania";
+@import "scss-pages/contact";
+@import "scss-pages/fechas";
+@import "scss-pages/festivales";
+@import "scss-pages/shows";
+@import "scss-pages/talleres";
+@import "partials/_mediaQuerys.scss";
 

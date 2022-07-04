@@ -80,6 +80,140 @@ nav ul li a:hover {
   box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
 }
 
+.compania {
+  max-width: 100%;
+}
+.compania img {
+  max-width: 60%;
+  margin-left: 20%;
+}
+
+.contacto {
+  max-width: 100%;
+}
+.contacto .form {
+  max-width: 80%;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+.contacto .form #name {
+  margin-top: 10px;
+  width: 70%;
+}
+.contacto .form #mail {
+  margin-top: 10px;
+  width: 70%;
+}
+.contacto .form #message {
+  margin-top: 10px;
+  width: 70%;
+}
+.contacto .form #send {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(60, 60, 60);
+  margin-bottom: 10px;
+}
+
+.fechas {
+  max-width: 80%;
+  margin: auto;
+}
+
+.fechas h3 {
+  color: white;
+}
+
+.fechas-pasadas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: start;
+  padding-bottom: 10px;
+  margin-bottom: 0rem;
+}
+
+.festivales {
+  max-width: 100%;
+}
+
+.festivales h3 {
+  border: solid 1px #fff;
+  box-shadow: 0 0 10px 0 #fff;
+  color: white;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  max-width: 60%;
+}
+
+.obras {
+  max-width: 90%;
+  margin: auto;
+}
+
+.obras h3 {
+  color: white;
+  text-align: center;
+}
+
+.obras p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.obras img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 15px;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+}
+
+.obras iframe {
+  align-self: center;
+  margin-top: 15px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.container-main .title-taller h2 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.container-main .title-taller p {
+  color: white;
+  max-width: 60%;
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: center;
+}
+.container-main #cards-taller {
+  max-width: 90%;
+  margin: auto;
+}
+.container-main #cards-taller .card {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgb(108, 108, 108);
+  min-width: 50%;
+  color: white;
+  margin: 10px;
+  transition: 0.3s;
+}
+.container-main #cards-taller .card:hover {
+  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+}
+
 /* -----MEDIA QUERY----- */
 @media screen and (max-width: 1100px) {
   body {

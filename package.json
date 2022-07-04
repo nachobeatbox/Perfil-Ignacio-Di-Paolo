@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css scss/compania.scss css/compania.css scss/contact.scss css/contact.css scss/fechas.scss css/fechas.css scss/festivales.scss css/festivales.css scss/shows.scss css/shows.css scss/talleres.scss css/talleres.css",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +22,6 @@
     "nodemon": "^2.0.16"
   },
   "devDependencies": {},
+  "keywords": [],
   "description": ""
 }
