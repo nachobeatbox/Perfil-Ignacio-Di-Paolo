@@ -14,17 +14,60 @@ section .d-flex{
     right: 0;
 }
 
+// BTN!!
+.boton-nav {
+    position: relative;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    color: white;
+    background: $color-background-nav;
+
+    a{
+        text-decoration: none;
+    }
+
+    &:hover {
+        background: transparent;
+        box-shadow: none;
+
+        a {
+            color: white;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: $color-background-img-nav;
+        box-shadow:
+            -1px -1px 5px 0px #0003;
+        transition: 400ms ease all;
+    }
+
+    &:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    &:hover:before,
+    &:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+}
+
 .bg-propio{
     background-color: $color-background-nav;
-}
-
-.nav-item :hover{
-    color: gray ;
-}
-
-nav ul li a:hover {
-    background-color: rgb(205, 205, 205);
-    color: gray;
 }
 
 .carousel-item{

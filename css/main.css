@@ -26,17 +26,50 @@ section .d-flex {
   right: 0;
 }
 
+.boton-nav {
+  position: relative;
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  color: white;
+  background: rgb(65, 65, 65);
+}
+.boton-nav a {
+  text-decoration: none;
+}
+.boton-nav:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.boton-nav:hover a {
+  color: white;
+}
+.boton-nav:before, .boton-nav:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: rgb(15, 15, 15);
+  box-shadow: -1px -1px 5px 0px rgba(0, 0, 0, 0.2);
+  transition: 400ms ease all;
+}
+.boton-nav:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.boton-nav:hover:before, .boton-nav:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
 .bg-propio {
   background-color: rgb(65, 65, 65);
-}
-
-.nav-item :hover {
-  color: gray;
-}
-
-nav ul li a:hover {
-  background-color: rgb(205, 205, 205);
-  color: gray;
 }
 
 .carousel-item {
@@ -70,13 +103,34 @@ nav ul li a:hover {
   max-width: 70%;
   margin: auto;
 }
-.container-main #cards .card {
-  background-color: rgb(35, 35, 35);
-  border: 1px solid white;
+.container-main #cards .card1 {
+  background-color: rgb(65, 65, 65);
+  border: 1px solid rgb(65, 65, 65);
   width: 30%;
+  text-align: center;
   transition: 0.3s;
 }
-.container-main #cards .card:hover {
+.container-main #cards .card1:hover {
+  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+}
+.container-main #cards .card2 {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgb(65, 65, 65);
+  width: 30%;
+  text-align: center;
+  transition: 0.3s;
+}
+.container-main #cards .card2:hover {
+  box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+}
+.container-main #cards .card3 {
+  background-color: #0a0a0a;
+  border: 1px solid rgb(65, 65, 65);
+  width: 30%;
+  text-align: center;
+  transition: 0.3s;
+}
+.container-main #cards .card3:hover {
   box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
 }
 
@@ -155,35 +209,30 @@ nav ul li a:hover {
   max-width: 90%;
   margin: auto;
 }
-
 .obras h3 {
   color: white;
   text-align: center;
 }
-
 .obras p {
   color: white;
   text-align: center;
   margin-top: 10px;
 }
-
 .obras img {
   max-width: 50%;
   height: auto;
   margin-left: 25%;
   margin-top: 15px;
 }
-
-.media {
-  display: flex;
-  flex-direction: column;
-}
-
 .obras iframe {
   align-self: center;
   margin-top: 15px;
   max-width: 80%;
   margin-bottom: 20px;
+}
+.obras .media {
+  display: flex;
+  flex-direction: column;
 }
 
 .container-main .title-taller h2 {
@@ -202,7 +251,7 @@ nav ul li a:hover {
   max-width: 90%;
   margin: auto;
 }
-.container-main #cards-taller .card {
+.container-main #cards-taller .card, .container-main #cards-taller .carta {
   background-color: rgb(35, 35, 35);
   border: 1px solid rgb(108, 108, 108);
   min-width: 50%;
@@ -210,8 +259,14 @@ nav ul li a:hover {
   margin: 10px;
   transition: 0.3s;
 }
-.container-main #cards-taller .card:hover {
+.container-main #cards-taller .card:hover, .container-main #cards-taller .carta:hover {
   box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+}
+.container-main .carta {
+  max-width: 40%;
+}
+.container-main .carta > img {
+  max-width: 100%;
 }
 
 /* -----MEDIA QUERY----- */
@@ -226,7 +281,7 @@ nav ul li a:hover {
   body .container-main section h1 {
     font-size: 30px;
   }
-  body .container-main #cards .card {
+  body .container-main #cards .card, body .container-main #cards .carta {
     margin: 10px;
     width: 45%;
   }
@@ -244,11 +299,11 @@ nav ul li a:hover {
   body .container-main #cards {
     min-width: 90%;
   }
-  body .container-main #cards .card {
+  body .container-main #cards .card, body .container-main #cards .carta {
     margin: 10px;
     width: 45% !important;
   }
-  body .container-main #cards-taller .card {
+  body .container-main #cards-taller .card, body .container-main #cards-taller .carta {
     margin: 10px;
     width: 44%;
   }
@@ -264,7 +319,7 @@ nav ul li a:hover {
   body #cards {
     width: 90%;
   }
-  body #cards-taller .card {
+  body #cards-taller .card, body #cards-taller .container-main .carta, .container-main body #cards-taller .carta {
     margin: 10px;
     width: 70% !important;
   }

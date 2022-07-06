@@ -1,11 +1,11 @@
-.container-main{
+.container-main {
     .title-taller {
         h2 {
             color: white;
             font-size: 20px;
             text-align: center;
         }
-    
+
         p {
             color: white;
             max-width: 60%;
@@ -15,19 +15,29 @@
         }
     }
 
-    #cards-taller{
+    #cards-taller {
         max-width: 90%;
         margin: auto;
-        .card{
+
+        .card {
             background-color: rgb(35, 35, 35);
             border: 1px solid rgb(108, 108, 108);
             min-width: 50%;
             color: white;
             margin: 10px;
             transition: 0.3s;
-            &:hover{
+
+            &:hover {
                 box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
             }
+        }
+    }
+
+    .carta {
+        @extend .card;
+        max-width: 40%;
+        >img {
+            max-width: 100%;
         }
     }
 }

@@ -1,3 +1,11 @@
 $color-background-body: #0a0a0a;
 $color-background-nav: rgb(65, 65, 65);
 $color-background-img-nav: rgb(15, 15, 15);
+
+$colores:(
+    body: $color-background-body,
+    nav: $color-background-nav,
+    img-nav:rgb(15, 15, 15),
+    body-container: rgb(35, 35, 35),
+    title-container: rgb(195, 195, 195),
+);

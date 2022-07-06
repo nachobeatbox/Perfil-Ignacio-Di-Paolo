@@ -1,11 +1,11 @@
 /* ------MAIN------- */
 .container-main {
-    background-color: rgb(35, 35, 35);
+    background-color: map-get($map: $colores, $key: body-container);
     min-height: 200px;
     border-top: 5px solid #151515;
 
     h1 {
-        color: rgb(195, 195, 195);
+        color: map-get($map: $colores , $key: title-container);
         text-align: left;
         text-decoration: underline 1px;
         margin-left: 15%;
@@ -22,19 +22,30 @@
         font-size: 20px;
     }
 
-    #cards {
-        padding-bottom: 60px;
-        max-width: 70%;
-        margin: auto;
-        .card{
-            background-color: rgb(35, 35, 35);
-            border: 1px solid white;
+    @mixin cards ($color-bg) {
+        background-color: $color-bg;
+            border: 1px solid $color-background-nav;
             width: 30%;
+            text-align: center;
             transition: 0.3s;
             &:hover{
                 box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
             }
+    }
+    
+    #cards {
+        padding-bottom: 60px;
+        max-width: 70%;
+        margin: auto;
+        .card1{
+            @include cards(map-get($map: $colores, $key: nav));
+        }
+        .card2{
+            @include cards(map-get($map: $colores, $key: body-container));
+        }
+        .card3{
+            @include cards(map-get($map: $colores, $key: body));
         }
     }
-
+    
 }
