@@ -1,43 +1,74 @@
-.container-main {
-    .title-taller {
-        h2 {
-            color: white;
-            font-size: 20px;
-            text-align: center;
-        }
+.banner-taller {
+    max-height: 600px;
+    justify-content: center;
+}
 
-        p {
-            color: white;
-            max-width: 60%;
-            margin: 20px auto;
-            font-size: 20px;
-            text-align: center;
+.container-taller {
+    background-color: $color-background-container;
+
+    h1 {
+        color: rgb(195, 195, 195);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .video-taller {
+        margin: auto;
+
+        iframe {
+            width: 70%;
+            height: 400px;
+            margin-left: 15%;
         }
     }
 
-    #cards-taller {
+    .images-taller {
+        display: flex;
         max-width: 90%;
-        margin: auto;
+        flex-wrap: wrap;
+        margin: 40px auto;
+        justify-content: space-around;
 
-        .card {
-            background-color: rgb(35, 35, 35);
-            border: 1px solid rgb(108, 108, 108);
-            min-width: 50%;
-            color: white;
-            margin: 10px;
+        a {
+            max-width: 30%;
             transition: 0.3s;
 
+            button {
+                display: none;
+            }
+
             &:hover {
-                box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+                transform: scale(1.1);
+                box-shadow: 0 0 6px 2px white;
+
+                button {
+                    position: absolute;
+                    bottom: -20px;
+                    left: 10px;
+                    display: block;
+                }
             }
         }
     }
 
-    .carta {
-        @extend .card;
-        max-width: 40%;
-        >img {
-            max-width: 100%;
+
+}
+
+.taller3 {
+    .btn{
+        height: 50px;
+        width: 200px;
+        margin-left: 5%;
+        margin-top: 10px;
+        border: solid 2px;
+        
+        i {
+            font-size: 30px;
         }
+    }
+
+    img{
+        width: 50%;
+        margin-left: 25%;
     }
 }

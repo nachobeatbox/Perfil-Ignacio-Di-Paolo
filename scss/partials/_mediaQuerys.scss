@@ -6,7 +6,7 @@
         width: 80%;
         margin: 30px auto;
 
-        .container-main {
+        .container-index {
             section {
                 p {
                     font-size: 20px;
@@ -16,12 +16,94 @@
                     font-size: 30px;
                 }
             }
+        }
 
-            #cards .card {
-                margin: 10px;
-                width: 45%;
+        // Querys TALLERES-----
+        .container-taller {
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
+                }
+            }
+
+            .images-taller {
+                min-width: 100%;
+
+                .foto-taller {
+                    min-width: 45%;
+                    margin-bottom: 15px;
+                }
             }
         }
+
+        .taller3 {
+            .btn {
+                width: 70px;
+            }
+
+            img {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+
+        //querys ESPECTACULOS -----
+        .videos {
+            .lambe {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .marioneta {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .video-espectaculos {
+                min-width: 90%;
+                max-height: 300px;
+            }
+        }
+
+        .pagina-lambe {
+            .btn {
+                width: 70px;
+            }
+
+            img {
+                width: 70%;
+                margin-left: 15%;
+            }
+        }
+
+        .lambe-lambe {
+            .milonga {
+                p{
+                    min-width: 80%;
+                }
+                a {
+                    min-width: 70%;
+                    margin-left: 15%;
+                    margin-bottom: 20px;
+                }
+            }
+
+            .carrusel-del-viejo-matias {
+                p{
+                    min-width: 80%;
+                }
+                a {
+                    min-width: 70%;
+                    margin-left: 15%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
     }
 
 }
@@ -31,7 +113,7 @@
     body {
         width: 80%;
 
-        .container-main {
+        .container-index {
             h1 {
                 font-size: 25px;
             }
@@ -39,25 +121,92 @@
             section p {
                 font-size: 15px;
             }
+        }
 
-            #cards {
-                min-width: 90%;
-
-                .card {
-                    margin: 10px;
-                    width: 45% !important;
+        // Querys TALLERES-----
+        .container-taller {
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
                 }
             }
 
-            #cards-taller {
-                .card {
-                    margin: 10px;
-                    width: 44%;
+            .images-taller {
+                min-width: 100%;
+
+                .foto-taller {
+                    min-width: 70%;
+                    margin-bottom: 15px;
                 }
             }
         }
+
+        .taller3 {
+            .btn {
+                width: 50px;
+            }
+
+            img {
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+
+        //querys ESPECTACULOS -----
+        .videos {
+            .lambe {
+                min-width: 90%;
+                margin: 10px;
+
+                .text-espect {
+                    font-size: 1rem;
+                }
+
+                .btn1 {
+                    position: relative !important;
+                }
+            }
+
+            .marioneta {
+                .text-espect {
+                    font-size: 1rem;
+                }
+            }
+
+            .video-espectaculos {
+                min-width: 90%;
+                max-height: 300px;
+            }
+        }
+
+        .pagina-lambe {
+            .btn {
+                width: 50px;
+            }
+
+            img {
+                width: 80%;
+                margin-left: 10%;
+            }
+        }
+
     }
 
+
+    //Querys company---
+    .container-company {
+
+        .logo-movil {
+            min-width: 70%;
+            margin: auto;
+        }
+
+        .contactarme {
+            min-width: 70%;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -70,16 +219,45 @@
             min-height: 200px;
         }
 
-        #cards {
-            width: 90%;
-        }
-
-        #cards-taller {
-            .card {
-                margin: 10px;
-                width: 70% !important;
+        // Querys INDEX-----
+        .container-index {
+            .gallery {
+                margin-left: 8% !important;
             }
         }
+
+        // Querys TALLERES-----
+        .container-taller {
+            .video-taller {
+                iframe {
+                    width: 90%;
+                    height: 200px;
+                    margin-left: 5%;
+                }
+            }
+
+            .images-taller {
+                min-width: 100%;
+
+                .foto-taller {
+                    min-width: 70%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+
     }
 
+    //Querys company---
+    .container-company {
+
+        .logo-movil {
+            min-width: 90%;
+            margin: auto;
+        }
+
+        .contactarme {
+            min-width: 70%;
+        }
+    }
 }

@@ -1,0 +1,48 @@
+/* ------MAIN------- */
+.container-index {
+    background-color: $color-background-container;
+
+    h1 {
+        color: rgb(195, 195, 195);
+        text-align: left;
+        margin-left: 15%;
+        padding: 20px;
+        font-size: 35px;
+    }
+
+    section p {
+        width: 70%;
+        margin-left: 15%;
+        margin-bottom: 50px;
+        text-align: left;
+        color: white;
+        font-size: 20px;
+    }
+
+    .row {
+        margin: 15px;
+    }
+
+    #cards {
+        padding-bottom: 60px;
+        max-width: 70%;
+        margin: auto;
+        .card{
+            background-color: rgb(35, 35, 35);
+            border: 1px solid white;
+            width: 30%;
+            transition: 0.3s;
+            &:hover{
+                box-shadow: 0 5px 5px 1px rgb(106, 106, 106);
+            }
+        }
+    }
+
+    #btn-subir{
+        width: 20%;
+        margin: auto;
+        color: white;
+        text-align: center;
+        font-size: 60px;
+    }
+}

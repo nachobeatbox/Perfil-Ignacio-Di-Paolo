@@ -1,12 +1,14 @@
-@import "partials/variables";
+@import "partials/_variables";
 @import "partials/_general";
 @import "partials/_header.scss";
-@import "partials/_container-Index";
-@import "scss-pages/compania";
-@import "scss-pages/contact";
-@import "scss-pages/fechas";
-@import "scss-pages/festivales";
-@import "scss-pages/shows";
-@import "scss-pages/talleres";
+@import "partials/gallery-index";
+@import "scss-pages/_container-Index";
+@import "scss-pages/_compania";
+@import "scss-pages/_contact";
+@import "scss-pages/_fechas";
+@import "scss-pages/_festivales";
+@import "scss-pages/_shows";
+@import "scss-pages/_talleres";
+@import "partials/_footer";
 @import "partials/_mediaQuerys.scss";
 
