@@ -27,6 +27,7 @@ section .d-flex {
 
     a{
         text-decoration: none;
+        
     }
 
     &:hover {
@@ -66,7 +67,6 @@ section .d-flex {
     }
 }
 
-//   FIN BTN ----
 .bg-propio {
     background-color: $color-background-nav;
 }

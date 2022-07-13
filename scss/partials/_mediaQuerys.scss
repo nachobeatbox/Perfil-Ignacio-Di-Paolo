@@ -6,6 +6,7 @@
         width: 80%;
         margin: 30px auto;
 
+        //querys Index----
         .container-index {
             section {
                 p {
@@ -82,9 +83,10 @@
 
         .lambe-lambe {
             .milonga {
-                p{
+                p {
                     min-width: 80%;
                 }
+
                 a {
                     min-width: 70%;
                     margin-left: 15%;
@@ -93,14 +95,22 @@
             }
 
             .carrusel-del-viejo-matias {
-                p{
+                p {
                     min-width: 80%;
                 }
+
                 a {
                     min-width: 70%;
                     margin-left: 15%;
                     margin-bottom: 20px;
                 }
+            }
+        }
+
+        .container-marionetas{
+            .gallery-marionetas{
+                max-width: 90%;
+                grid-template-columns: repeat(4, 1fr);
             }
         }
 
@@ -113,6 +123,7 @@
     body {
         width: 80%;
 
+        //querys Index----
         .container-index {
             h1 {
                 font-size: 25px;
@@ -192,21 +203,30 @@
             }
         }
 
+        .container-marionetas{
+            .gallery-marionetas{
+                max-width: 90%;
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        //Querys company---
+        .container-company {
+    
+            .logo-movil {
+                min-width: 70%;
+                margin: auto;
+            }
+    
+            .contactarme {
+                min-width: 70%;
+            }
+        }
+
+
     }
 
 
-    //Querys company---
-    .container-company {
-
-        .logo-movil {
-            min-width: 70%;
-            margin: auto;
-        }
-
-        .contactarme {
-            min-width: 70%;
-        }
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -217,13 +237,6 @@
 
         #img-logo {
             min-height: 200px;
-        }
-
-        // Querys INDEX-----
-        .container-index {
-            .gallery {
-                margin-left: 8% !important;
-            }
         }
 
         // Querys TALLERES-----
@@ -246,18 +259,26 @@
             }
         }
 
-    }
-
-    //Querys company---
-    .container-company {
-
-        .logo-movil {
-            min-width: 90%;
-            margin: auto;
+        //query Espectaculso
+        .container-marionetas{
+            .gallery-marionetas{
+                max-width: 100%;
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
-        .contactarme {
-            min-width: 70%;
+        //Querys company---
+        .container-company {
+    
+            .logo-movil {
+                min-width: 90%;
+                margin: auto;
+            }
+    
+            .contactarme {
+                min-width: 70%;
+            }
         }
     }
+
 }

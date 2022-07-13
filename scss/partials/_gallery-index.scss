@@ -1,18 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:500);
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 75%;
-
-    /* Compensate for excess margin on outer gallery flex items */
+    max-width: 70%;
     margin: auto;
     padding-bottom: 20px;
 
     .gallery-item {
-        /* Minimum width of 24rem and grow to fit available space */
-        flex: 1 0 24rem;
-        /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
         margin: 0.5rem;
         box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
         overflow: hidden;
@@ -34,7 +27,7 @@
 @supports (display: grid) {
     .gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
     }
 
     .gallery-item {

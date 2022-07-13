@@ -80,17 +80,11 @@ section .d-flex {
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 75%;
-  /* Compensate for excess margin on outer gallery flex items */
+  max-width: 70%;
   margin: auto;
   padding-bottom: 20px;
 }
 .gallery .gallery-item {
-  /* Minimum width of 24rem and grow to fit available space */
-  flex: 1 0 24rem;
-  /* Margin value should be half of grid-gap value as margins on flex items don't collapse */
   margin: 0.5rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
@@ -109,7 +103,7 @@ section .d-flex {
 @supports (display: grid) {
   .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
   }
   .gallery-item {
     margin: 0;
@@ -190,7 +184,7 @@ section .d-flex {
   height: 240px;
   background-image: url("../../images/Sin título.png");
   box-shadow: 0 0 10px 8px rgb(65, 65, 65);
-  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 0.3s infinite alternate;
+  animation: anime 4s cubic-bezier(0.16, 1, 0.3, 1) 1s infinite alternate;
 }
 @keyframes anime {
   0% {
@@ -311,7 +305,6 @@ section .d-flex {
 }
 .container-espectaculos .videos .video-espectaculos {
   width: 100%;
-  height: 500px;
 }
 .container-espectaculos .videos .text-espect {
   color: white;
@@ -335,9 +328,9 @@ section .d-flex {
   text-decoration: none;
 }
 .container-espectaculos .videos .lambe .btn1, .container-espectaculos .videos .marioneta .btn1 {
+  position: absolute;
   bottom: 0;
   margin: 10px;
-  position: absolute;
 }
 .container-espectaculos .videos .marioneta a {
   text-decoration: none;
@@ -347,47 +340,56 @@ section .d-flex {
   margin: 10px;
 }
 
-.lambe-lambe {
+.lambe-lambe, .container-marionetas {
   background-color: rgb(35, 35, 35);
   color: white;
 }
-.lambe-lambe .btn {
+.lambe-lambe .btn, .container-marionetas .btn {
   margin: 20px;
 }
-.lambe-lambe .btn i {
+.lambe-lambe .btn i, .container-marionetas .btn i {
   font-size: 35px;
 }
-.lambe-lambe h2 {
+.lambe-lambe h2, .container-marionetas h2 {
   text-align: center;
 }
-.lambe-lambe a {
+.lambe-lambe a, .container-marionetas a {
   width: 100px;
 }
-.lambe-lambe h3 {
-  text-align: center;
-}
-.lambe-lambe article {
+.lambe-lambe article, .container-marionetas article {
   border-top: 1px solid white;
   margin-bottom: 30px;
   padding: 20px;
 }
-.lambe-lambe .carrusel-del-viejo-matias p {
+.lambe-lambe article h3, .container-marionetas article h3 {
+  text-align: center;
+}
+.lambe-lambe .bellos-y-bestias p, .container-marionetas .bellos-y-bestias p {
   max-width: 50%;
   margin: auto;
 }
-.lambe-lambe .carrusel-del-viejo-matias a {
+.lambe-lambe .bellos-y-bestias a, .container-marionetas .bellos-y-bestias a {
   width: 35%;
   margin-left: 32.5%;
   margin-bottom: 20px;
 }
-.lambe-lambe .milonga a {
+.lambe-lambe .carrusel-del-viejo-matias p, .container-marionetas .carrusel-del-viejo-matias p {
+  max-width: 50%;
+  margin: auto;
+}
+.lambe-lambe .carrusel-del-viejo-matias a, .container-marionetas .carrusel-del-viejo-matias a {
   width: 35%;
   margin-left: 32.5%;
   margin-bottom: 20px;
 }
-.lambe-lambe .milonga p {
+.lambe-lambe .milonga p, .container-marionetas .milonga p {
   max-width: 50%;
   margin: auto;
+}
+.lambe-lambe .milonga a, .container-marionetas .milonga a {
+  width: 35%;
+  margin-left: 32.5%;
+  margin-bottom: 20px;
 }
 
 .pagina-lambe .btn {
@@ -397,12 +399,50 @@ section .d-flex {
   margin-top: 10px;
   border: solid 2px;
 }
-.pagina-lambe .btn .fa-solid {
-  font-size: 35px;
+.pagina-lambe .btn i {
+  font-size: 30px;
 }
 .pagina-lambe img {
   width: 50%;
   margin-left: 25%;
+}
+
+.container-marionetas .description-enderas {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.container-marionetas .gallery-marionetas {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.container-marionetas .gallery-marionetas .gallery-marionetas-item {
+  flex: 1 0 24rem;
+  margin: 0.5rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+.container-marionetas .gallery-marionetas .gallery-marioneta-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.container-marionetas .gallery-marionetas .gallery-marioneta-image:hover {
+  transform: scale(1.05);
+}
+@supports (display: grid) {
+  .container-marionetas .gallery-marionetas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .container-marionetas .gallery-marionetas-item {
+    margin: 0;
+  }
 }
 
 .banner-taller {
@@ -615,21 +655,25 @@ a {
     width: 70%;
     margin-left: 15%;
   }
-  body .lambe-lambe .milonga p {
+  body .lambe-lambe .milonga p, body .container-marionetas .milonga p {
     min-width: 80%;
   }
-  body .lambe-lambe .milonga a {
+  body .lambe-lambe .milonga a, body .container-marionetas .milonga a {
     min-width: 70%;
     margin-left: 15%;
     margin-bottom: 20px;
   }
-  body .lambe-lambe .carrusel-del-viejo-matias p {
+  body .lambe-lambe .carrusel-del-viejo-matias p, body .container-marionetas .carrusel-del-viejo-matias p {
     min-width: 80%;
   }
-  body .lambe-lambe .carrusel-del-viejo-matias a {
+  body .lambe-lambe .carrusel-del-viejo-matias a, body .container-marionetas .carrusel-del-viejo-matias a {
     min-width: 70%;
     margin-left: 15%;
     margin-bottom: 20px;
+  }
+  body .container-marionetas .gallery-marionetas {
+    max-width: 90%;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
@@ -685,11 +729,15 @@ a {
     width: 80%;
     margin-left: 10%;
   }
-  .container-company .logo-movil {
+  body .container-marionetas .gallery-marionetas {
+    max-width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .container-company .logo-movil {
     min-width: 70%;
     margin: auto;
   }
-  .container-company .contactarme {
+  body .container-company .contactarme {
     min-width: 70%;
   }
 }
@@ -700,9 +748,6 @@ a {
   }
   body #img-logo {
     min-height: 200px;
-  }
-  body .container-index .gallery {
-    margin-left: 8% !important;
   }
   body .container-taller .video-taller iframe {
     width: 90%;
@@ -716,11 +761,15 @@ a {
     min-width: 70%;
     margin-bottom: 15px;
   }
-  .container-company .logo-movil {
+  body .container-marionetas .gallery-marionetas {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .container-company .logo-movil {
     min-width: 90%;
     margin: auto;
   }
-  .container-company .contactarme {
+  body .container-company .contactarme {
     min-width: 70%;
   }
 }
