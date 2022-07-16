@@ -62,28 +62,8 @@
         </div>
       </div>
     </nav>
-    
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../../images/img-header/carrusel-roxy.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../../images/img-header/carrusel-pepe.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+
   </header>
 
   <main class="container-espectaculos">
@@ -91,36 +71,47 @@
     <h1>Espectaculos</h1>
 
     <div class="videos">
-      <div class="marioneta position-relative border-info">
-        <h3>Teatro de Marionetas</h3>
-        <a href="marionetas-pages/marionetas.html">
-          <video class="video-espectaculos" autoplay loop>
-            <source src="../../images/MARIONETAS-DE-HILO.mp4" type="video/mp4"
-              alt="Video de Rosana Lopez con su marioneta en el teatro.">
-          </video>
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/o9o7LQBlf1E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br>
-          <p>--AQUI PODRAS VER MIS OBRAS DE MARIONETAS.</p>
-          <button class="btn2 btn btn-info text-light">Click Marionetas </button>
-        </a>
-      </div>
-      <div class="lambe position-relative border-info">
-        <h3>Teatro Lambe-Lambe</h3>
-        <a href="./lambe-lambe-pages/lambelambe.html">
-          <video class="video-espectaculos" frameborder="0" autoplay loop
-            alt="Video de Rosana Lopez haciendo teatro Lambe Lambe.">
-            <source src="../../images/CARD CARRUSEL.mp4" type="video/mp4">
-          </video>
-          <iframe width="100%" height="300" src="https://www.youtube.com/embed/o-0f1Nmd17Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <br>
-          <p>--AQUI PODRAS VER MIS OBRAS Lambe Lambe.</p>
-
-          <button class="btn1 btn btn-info text-light">Click Lambe Lambe</button>
-        </a>
+      <div class="videos-section1 d-flex">
+        <div class="marioneta position-relative border-info">
+          <a href="marionetas-pages/marionetas.html">
+            <video class="video-espectaculos" autoplay loop>
+              <source src="../../images/MARIONETAS-DE-HILO.mp4" type="video/mp4"
+                alt="Video de Rosana Lopez con su marioneta en el teatro.">
+            </video>
+            <br>
+            <p>-Click aca para ver las obras.</p>
+            <button class="btn2 btn btn-info text-light">Click ver </button>
+          </a>
+        </div>
+        <div class="lambe border-info">
+          <a href="./lambe-lambe-pages/lambelambe.html">
+            <video class="video-espectaculos" frameborder="0" autoplay loop
+              alt="Video de Rosana Lopez haciendo teatro Lambe Lambe.">
+              <source src="../../images/CARD CARRUSEL.mp4" type="video/mp4">
+            </video>
+            <br>
+            <p>Click aca para ver las obras.</p>
+            <button class="btn1 btn btn-info text-light">Click ver</button>
+          </a>
+        </div>
       </div>
 
-
-
+      <div class="videos-section2 d-flex ">
+        <div class="video-atelier">
+          <h3>Nuestro atelier</h3>
+          <iframe class="video-1" width="100%" height="300" src="https://www.youtube.com/embed/o9o7LQBlf1E"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+        <div class="video-lambe">
+          <h3>Teatro Lambe-Lambe</h3>
+          <iframe class="video-2" width="100%" height="300" src="https://www.youtube.com/embed/o-0f1Nmd17Q"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
   </main>
 

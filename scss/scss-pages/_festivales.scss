@@ -1,13 +1,11 @@
-.festivales{
-    max-width: 100%;
-}
+.container-portfolio{
+    background-color: $color-background-container;
 
-.festivales h3{
-    border: solid 1px #fff;
-    box-shadow: 0 0 10px 0 #fff;
-    color: white;
-    text-align: center;
-    margin: auto;
-    margin-bottom: 50px;
-    max-width: 60%;
+    .porfolio{
+        width: 50%;
+        align-self: center;
+        color: white;
+        text-align: center;
+        border: solid 2px white;
+    }
 }
