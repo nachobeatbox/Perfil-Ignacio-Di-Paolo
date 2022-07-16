@@ -107,10 +107,12 @@
             }
         }
 
-        .container-marionetas{
-            .gallery-marionetas{
-                max-width: 90%;
-                grid-template-columns: repeat(4, 1fr);
+        .container-marionetas {
+            .enderas {
+                .gallery-marionetas {
+                    max-width: 90%;
+                    grid-template-columns: repeat(3, 1fr);
+                }
             }
         }
 
@@ -203,21 +205,23 @@
             }
         }
 
-        .container-marionetas{
-            .gallery-marionetas{
-                max-width: 90%;
-                grid-template-columns: repeat(3, 1fr);
+        .container-marionetas {
+            .enderas {
+                .gallery-marionetas {
+                    max-width: 90%;
+                    grid-template-columns: repeat(2, 1fr);
+                }
             }
         }
 
         //Querys company---
         .container-company {
-    
+
             .logo-movil {
                 min-width: 70%;
                 margin: auto;
             }
-    
+
             .contactarme {
                 min-width: 70%;
             }
@@ -260,21 +264,24 @@
         }
 
         //query Espectaculso
-        .container-marionetas{
-            .gallery-marionetas{
-                max-width: 100%;
-                grid-template-columns: repeat(3, 1fr);
+        .container-marionetas {
+            .enderas {
+                .gallery-marionetas {
+                    margin: 0;
+                    grid-template-columns: 1fr 1fr;
+                    height: auto;
+                }
             }
         }
 
         //Querys company---
         .container-company {
-    
+
             .logo-movil {
                 min-width: 90%;
                 margin: auto;
             }
-    
+
             .contactarme {
                 min-width: 70%;
             }

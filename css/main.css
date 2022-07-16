@@ -178,7 +178,7 @@ section .d-flex {
   width: 50%;
   height: 270px;
 }
-.container-company .box {
+.container-company .logo-movil .box {
   border-radius: 20px;
   width: 70px;
   height: 240px;
@@ -331,6 +331,7 @@ section .d-flex {
   position: absolute;
   bottom: 0;
   margin: 10px;
+  font-size: 1.2rem;
 }
 .container-espectaculos .videos .marioneta a {
   text-decoration: none;
@@ -338,6 +339,7 @@ section .d-flex {
 .container-espectaculos .videos .marioneta .btn2 {
   bottom: 0;
   margin: 10px;
+  font-size: 1.2rem;
 }
 
 .lambe-lambe, .container-marionetas {
@@ -407,42 +409,72 @@ section .d-flex {
   margin-left: 25%;
 }
 
-.container-marionetas .description-enderas {
+.container-marionetas .enderas .description-enderas {
   max-width: 80%;
   margin: auto;
   margin-bottom: 30px;
 }
-.container-marionetas .gallery-marionetas {
+.container-marionetas .enderas .gallery-marionetas {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   max-width: 80%;
   margin: auto;
   padding-bottom: 20px;
 }
-.container-marionetas .gallery-marionetas .gallery-marionetas-item {
+.container-marionetas .enderas .gallery-marionetas .gallery-marionetas-item {
   flex: 1 0 24rem;
   margin: 0.5rem;
-  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
-.container-marionetas .gallery-marionetas .gallery-marioneta-image {
+.container-marionetas .enderas .gallery-marionetas .gallery-marioneta-image {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   transition: transform 400ms ease-out;
 }
-.container-marionetas .gallery-marionetas .gallery-marioneta-image:hover {
+.container-marionetas .enderas .gallery-marionetas .gallery-marioneta-image:hover {
   transform: scale(1.05);
 }
 @supports (display: grid) {
-  .container-marionetas .gallery-marionetas {
+  .container-marionetas .enderas .gallery-marionetas {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
-  .container-marionetas .gallery-marionetas-item {
+  .container-marionetas .enderas .gallery-marionetas-item {
     margin: 0;
   }
+}
+.container-marionetas .enderas .btn-marionetas {
+  margin-left: 35%;
+  width: 30%;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.pagina-enderas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-left: 5%;
+}
+.pagina-enderas a {
+  height: 50px;
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 10px;
+  border: solid 2px;
+}
+.pagina-enderas a i {
+  font-size: 30px;
+}
+.pagina-enderas img {
+  max-width: 90%;
+  margin: 10px;
+  border: solid 3px rgb(65, 65, 65);
 }
 
 .banner-taller {
@@ -514,7 +546,6 @@ section .d-flex {
   padding-left: 0;
   margin-bottom: 0;
 }
-
 .redes .icon {
   position: relative;
   background: #b8b8b8;
@@ -532,7 +563,15 @@ section .d-flex {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
+.redes .icon:hover .nombre-red {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.redes .icon:hover span, .redes .icon:hover .nombre-red {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
 .redes .nombre-red {
   position: absolute;
   top: 0;
@@ -546,7 +585,6 @@ section .d-flex {
   pointer-events: none;
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
 .redes .nombre-red::before {
   position: absolute;
   content: "";
@@ -558,53 +596,34 @@ section .d-flex {
   transform: translate(-50%) rotate(45deg);
   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-
-.redes .icon:hover .nombre-red {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.redes .icon:hover span,
-.redes .icon:hover .nombre-red {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-
-a {
+.redes a {
   color: #474747;
 }
-
-.facebook:hover a, .instagram:hover a, .youtube:hover a, .envelope:hover a {
+.redes .facebook:hover a,
+.redes .instagram:hover a,
+.redes .youtube:hover a,
+.redes .envelope:hover a {
   color: white;
 }
-
 .redes .facebook:hover,
 .redes .facebook:hover .nombre-red,
 .redes .facebook:hover .nombre-red::before {
   background: #1877F2;
-  color: #ffffff;
 }
-
 .redes .instagram:hover,
 .redes .instagram:hover .nombre-red,
 .redes .instagram:hover .nombre-red::before {
   background: #E4405F;
-  color: #ffffff;
 }
-
 .redes .youtube:hover,
 .redes .youtube:hover .nombre-red,
 .redes .youtube:hover .nombre-red::before {
   background: #CD201F;
-  color: #ffffff;
 }
-
 .redes .envelope:hover,
 .redes .envelope:hover .nombre-red,
 .redes .envelope:hover .nombre-red::before {
   background: #c66d2e;
-  color: #ffffff;
 }
 
 /* -----MEDIA QUERY----- */
@@ -671,9 +690,9 @@ a {
     margin-left: 15%;
     margin-bottom: 20px;
   }
-  body .container-marionetas .gallery-marionetas {
+  body .container-marionetas .enderas .gallery-marionetas {
     max-width: 90%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media screen and (max-width: 768px) {
@@ -729,9 +748,9 @@ a {
     width: 80%;
     margin-left: 10%;
   }
-  body .container-marionetas .gallery-marionetas {
+  body .container-marionetas .enderas .gallery-marionetas {
     max-width: 90%;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   body .container-company .logo-movil {
     min-width: 70%;
@@ -761,9 +780,10 @@ a {
     min-width: 70%;
     margin-bottom: 15px;
   }
-  body .container-marionetas .gallery-marionetas {
-    max-width: 100%;
-    grid-template-columns: repeat(3, 1fr);
+  body .container-marionetas .enderas .gallery-marionetas {
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
   }
   body .container-company .logo-movil {
     min-width: 90%;
