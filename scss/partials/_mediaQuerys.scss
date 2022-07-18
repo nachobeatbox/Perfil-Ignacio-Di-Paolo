@@ -70,6 +70,7 @@
             }
         }
 
+        //url espectaculos/lambelambe/obras/milonga y viejo matias.
         .pagina-lambe {
             .btn {
                 width: 70px;
@@ -107,11 +108,12 @@
             }
         }
 
+        // url espectaculos/marionetas/marionetas.
         .container-marionetas {
-            .enderas {
-                .gallery-marionetas {
-                    max-width: 90%;
-                    grid-template-columns: repeat(3, 1fr);
+            .images-marionetas {
+                a {
+                    width: 60%;
+                    margin: 20px;
                 }
             }
         }
@@ -168,13 +170,14 @@
         }
 
         //intervenciones querys.
-        .book{
+        .book {
             transform: scale(0.95);
         }
 
         //querys ESPECTACULOS -----
         .videos {
             background-image: none !important;
+
             .videos-section1 {
                 flex-direction: column;
                 justify-content: space-around;
@@ -192,18 +195,22 @@
 
                 .marioneta {
                     min-width: 80%;
+
                     .btn2 {
                         font-size: 1rem !important;
                     }
                 }
 
             }
+
             .videos-section2 {
                 flex-direction: column;
                 align-items: center;
+
                 .video-atelier {
                     min-width: 80%;
                 }
+
                 .video-lambe {
                     min-width: 80%;
                 }
@@ -223,15 +230,17 @@
             }
         }
 
-        // url marioneta-pages/obras-marionetas/enderas
+        // url espectaculos/marionetas/marionetas.
         .container-marionetas {
-            .enderas {
-                .gallery-marionetas {
-                    max-width: 90%;
-                    grid-template-columns: repeat(2, 1fr);
+            .images-marionetas {
+                a {
+                    width: 70%;
                 }
             }
         }
+
+        // url marioneta-pages/obras-marionetas/enderas
+
 
         //Querys company---
         .container-company {
@@ -283,20 +292,30 @@
         }
 
         //intervenciones querys.
-        .book{
+        .book {
             transform: scale(0.8);
         }
 
-        //query Espectaculso
+        //query Espectaculos
+        // url espectaculos/marionetas/marionetas.
         .container-marionetas {
-            .enderas {
-                .gallery-marionetas {
-                    margin: 0;
-                    grid-template-columns: 1fr 1fr;
-                    height: auto;
+            .images-marionetas {
+                a {
+                    position: relative;
+                    width: 80%;
+                    text-decoration: none;
+                    margin-bottom: 20px;
+
+                    button {
+                        position: absolute;
+                        bottom: -30px;
+                        left: 10px;
+                        display: block;
+                    }
                 }
             }
         }
+
 
         //Querys company---
         .container-company {
@@ -308,6 +327,15 @@
 
             .contactarme {
                 min-width: 70%;
+            }
+        }
+
+        //querys portfolio
+
+        .container-portfolio{
+            iframe{
+                max-width: 98%;
+                margin: 1%;
             }
         }
     }

@@ -2,10 +2,11 @@
     background-color: $color-background-container;
 
     .porfolio{
-        width: 50%;
-        align-self: center;
-        color: white;
-        text-align: center;
-        border: solid 2px white;
+        width: 100%;
+        iframe{
+            width: 100%;
+            height: 600px;
+        }
+        
     }
 }

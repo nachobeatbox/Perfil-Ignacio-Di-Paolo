@@ -601,7 +601,7 @@
 body {
   background-color: #0a0a0a;
   width: 80%;
-  margin: 15px 10%;
+  margin: 0 10%;
   box-shadow: 0 0 400px 0 rgb(39, 39, 39);
 }
 
@@ -611,6 +611,7 @@ body {
 }
 
 #img-logo {
+  width: 100%;
   max-height: 500px;
 }
 
@@ -690,6 +691,7 @@ section .d-flex {
 }
 .gallery .gallery-image:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 @supports (display: grid) {
@@ -869,11 +871,11 @@ section .d-flex {
   background-color: rgb(35, 35, 35);
 }
 .container-portfolio .porfolio {
-  width: 50%;
-  align-self: center;
-  color: white;
-  text-align: center;
-  border: solid 2px white;
+  width: 100%;
+}
+.container-portfolio .porfolio iframe {
+  width: 100%;
+  height: 600px;
 }
 
 .container-espectaculos {
@@ -971,11 +973,20 @@ section .d-flex {
   background-color: rgb(35, 35, 35);
   color: white;
 }
-.lambe-lambe .btn, .container-marionetas .btn {
-  margin: 20px;
+.lambe-lambe .btn-back, .container-marionetas .btn-back {
+  height: 35px;
+  width: 100px;
+  margin-left: 3%;
+  margin-top: 10px;
+  background-color: rgb(35, 35, 35);
+  border: solid 1px white;
+  color: wheat;
 }
-.lambe-lambe .btn i, .container-marionetas .btn i {
-  font-size: 35px;
+.lambe-lambe .btn-back:hover, .container-marionetas .btn-back:hover {
+  background-color: #0dcaf0;
+}
+.lambe-lambe .btn-back i, .container-marionetas .btn-back i {
+  font-size: 20px;
 }
 .lambe-lambe h2, .container-marionetas h2 {
   text-align: center;
@@ -1020,87 +1031,74 @@ section .d-flex {
 }
 
 .pagina-lambe .btn {
-  height: 50px;
-  width: 150px;
+  height: 35px;
+  width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  border: solid 1px;
+  background-color: rgb(35, 35, 35);
+  border: solid 1px white;
+  color: wheat;
+}
+.pagina-lambe .btn:hover {
+  background-color: #0dcaf0;
 }
 .pagina-lambe .btn i {
-  font-size: 27px;
+  font-size: 20px;
 }
 .pagina-lambe img {
   width: 50%;
   margin-left: 25%;
 }
 
-.container-marionetas .enderas .description-enderas {
-  max-width: 80%;
-  margin: auto;
-  margin-bottom: 30px;
+.container-marionetas {
+  min-height: 600px;
 }
-.container-marionetas .enderas .gallery-marionetas {
+.container-marionetas .images-marionetas {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  max-width: 80%;
-  margin: auto;
-  padding-bottom: 20px;
+  max-width: 100%;
+  gap: 10px;
+  margin: 40px auto;
+  justify-content: space-around;
 }
-.container-marionetas .enderas .gallery-marionetas .gallery-marionetas-item {
-  flex: 1 0 24rem;
-  margin: 0.5rem;
-  overflow: hidden;
-  border-width: 0 !important;
-}
-.container-marionetas .enderas .gallery-marionetas .gallery-marioneta-image {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  transition: transform 400ms ease-out;
-}
-.container-marionetas .enderas .gallery-marionetas .gallery-marioneta-image:hover {
-  transform: scale(1.05);
-}
-@supports (display: grid) {
-  .container-marionetas .enderas .gallery-marionetas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .container-marionetas .enderas .gallery-marionetas-item {
-    margin: 0;
-  }
-}
-.container-marionetas .enderas .btn-marionetas {
-  margin-left: 35%;
+.container-marionetas .images-marionetas a {
   width: 30%;
+  transition: 0.3s;
+  text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+}
+.container-marionetas .images-marionetas a button {
+  display: none;
+}
+.container-marionetas .images-marionetas a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 6px 2px white;
+}
+.container-marionetas .images-marionetas a:hover button {
+  position: absolute;
+  bottom: -30px;
+  left: 10px;
+  display: block;
 }
 
 .pagina-enderas {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
   width: 90%;
   margin-left: 5%;
 }
 .pagina-enderas a {
-  height: 50px;
-  width: 150px;
+  height: 35px;
+  width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  border: solid 1px;
+  background-color: rgb(35, 35, 35);
+  border: solid 1px white;
+  color: wheat;
+}
+.pagina-enderas a:hover {
+  background-color: #0dcaf0;
 }
 .pagina-enderas a i {
-  font-size: 27px;
-}
-.pagina-enderas img {
-  max-width: 90%;
-  margin: 10px;
-  border: solid 3px rgb(65, 65, 65);
+  font-size: 20px;
 }
 
 .banner-taller {
@@ -1150,14 +1148,19 @@ section .d-flex {
 }
 
 .taller3 .btn {
-  height: 50px;
-  width: 150px;
+  height: 35px;
+  width: 100px;
   margin-left: 3%;
   margin-top: 10px;
-  border: solid 1px;
+  background-color: rgb(35, 35, 35);
+  border: solid 1px white;
+  color: wheat;
+}
+.taller3 .btn:hover {
+  background-color: #0dcaf0;
 }
 .taller3 .btn i {
-  font-size: 27px;
+  font-size: 20px;
 }
 .taller3 img {
   width: 50%;
@@ -1316,9 +1319,9 @@ section .d-flex {
     margin-left: 15%;
     margin-bottom: 20px;
   }
-  body .container-marionetas .enderas .gallery-marionetas {
-    max-width: 90%;
-    grid-template-columns: repeat(3, 1fr);
+  body .container-marionetas .images-marionetas a {
+    width: 60%;
+    margin: 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1392,9 +1395,8 @@ section .d-flex {
     width: 80%;
     margin-left: 10%;
   }
-  body .container-marionetas .enderas .gallery-marionetas {
-    max-width: 90%;
-    grid-template-columns: repeat(2, 1fr);
+  body .container-marionetas .images-marionetas a {
+    width: 70%;
   }
   body .container-company .logo-movil {
     min-width: 70%;
@@ -1427,10 +1429,17 @@ section .d-flex {
   body .book {
     transform: scale(0.8);
   }
-  body .container-marionetas .enderas .gallery-marionetas {
-    margin: 0;
-    grid-template-columns: 1fr 1fr;
-    height: auto;
+  body .container-marionetas .images-marionetas a {
+    position: relative;
+    width: 80%;
+    text-decoration: none;
+    margin-bottom: 20px;
+  }
+  body .container-marionetas .images-marionetas a button {
+    position: absolute;
+    bottom: -30px;
+    left: 10px;
+    display: block;
   }
   body .container-company .logo-movil {
     min-width: 90%;
@@ -1438,6 +1447,10 @@ section .d-flex {
   }
   body .container-company .contactarme {
     min-width: 70%;
+  }
+  body .container-portfolio iframe {
+    max-width: 98%;
+    margin: 1%;
   }
 }
 

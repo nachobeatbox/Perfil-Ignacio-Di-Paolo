@@ -50,16 +50,14 @@
             }
         }
     }
-
-
 }
 
 .taller3 {
-    .btn{
-        @include btn-back(); 
+    .btn {
+        @include btn-back();
     }
 
-    img{
+    img {
         width: 50%;
         margin-left: 25%;
     }

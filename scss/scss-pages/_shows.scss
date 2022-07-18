@@ -96,13 +96,16 @@
 
             .video-atelier {
                 width: 40%;
+
                 iframe {
                     width: 100%;
                     align-self: center;
                 }
             }
+
             .video-lambe {
                 width: 40%;
+
                 iframe {
                     width: 100%;
                     align-self: center;
@@ -118,12 +121,8 @@
     background-color: $color-background-container;
     color: white;
 
-    .btn {
-        margin: 20px;
-
-        i {
-            font-size: 35px;
-        }
+    .btn-back{
+        @include btn-back;
     }
 
     h2 {
@@ -186,61 +185,54 @@
 //Estilos pagina Espectaculos/marionetas
 .container-marionetas {
     @extend .lambe-lambe;
+    min-height: 600px;
 
-    .enderas {
+    .images-marionetas {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 10px;
+        margin: 40px auto;
+        justify-content: space-around;
 
-        .description-enderas {
-            max-width: 80%;
-            margin: auto;
-            margin-bottom: 30px;
-        }
+        a {
+            width: 30%;
+            transition: 0.3s;
+            text-decoration: none;
+            color: white;
 
-        .gallery-marionetas {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 80%;
-            margin: auto;
-            padding-bottom: 20px;
-
-            .gallery-marionetas-item {
-                flex: 1 0 24rem;
-                margin: 0.5rem;
-                overflow: hidden;
-                border-width: 0 !important
+            button {
+                display: none;
             }
 
-            .gallery-marioneta-image {
-                display: block;
-                width: 100%;
-                object-fit: cover;
-                transition: transform 400ms ease-out;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 6px 2px white;
 
-                &:hover {
-                    transform: scale(1.05);
+                button {
+                    position: absolute;
+                    bottom: -30px;
+                    left: 10px;
+                    display: block;
                 }
             }
         }
-
-        @supports (display: grid) {
-            .gallery-marionetas {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-            }
-
-            .gallery-marionetas-item {
-                margin: 0;
-            }
-        }
-
-        .btn-marionetas {
-            margin-left: 35%;
-            width: 30%;
-            color: white;
-            font-size: 1.2rem
-        }
     }
+
+    // .enderas {
+
+    //     .description-enderas {
+    //         max-width: 80%;
+    //         margin: auto;
+    //         margin-bottom: 30px;
+    //     }
+
+    //     .btn-marionetas {
+    //         margin-left: 35%;
+    //         width: 40%;
+    //         color: white;
+    //     }
+    // }
 
 }
 
@@ -250,17 +242,7 @@
         @include btn-back;
     }
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
     width: 90%;
     margin-left: 5%;
 
-    img {
-        max-width: 90%;
-        margin: 10px;
-        border: solid 3px $color-background-nav;
-
-    }
 }
